@@ -12,4 +12,12 @@ Wordle is free word game online created by Josh Wardle in 2021. This game is lik
 The goal is to guess a 5 letter word in English language in a maximum of 6 a maximum of 6 guesses.
 If the letter is at the right place background becomes green, if it is misplaced he becomes yellow else he becomes grey.
 
+## How to run 
 
+Local Webassembly : 
+Be sure to have emsdk sources on your current workspace 
+Use a command like : `source ../emsdk/emsdk_env.sh`
+Run : `make web ; emrun --no_browser wordle_test.html`  
+  
+Shell : 
+'make && ./wordle '
