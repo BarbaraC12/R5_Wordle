@@ -14,10 +14,9 @@ If the letter is at the right place background becomes green, if it is misplaced
 
 ## How to run 
 
-Local Webassembly : 
-Be sure to have emsdk sources on your current workspace  
-Use a command like : `source ../emsdk/emsdk_env.sh`  
+#### Local Webassembly : 
+Be sure to have emsdk sources on your current workspace use a command like : `source ../emsdk/emsdk_env.sh`  
 Run : `make web ; emrun --no_browser wordle_test.html`    
   
-Shell : 
-'make && ./wordle '
+#### Shell :  
+Run : `make && ./wordle `
