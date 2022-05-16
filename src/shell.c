@@ -104,7 +104,7 @@ int shell_game_loop(char *word, int fd, unsigned int *nb_try) {
         print_title(buff, result);
         valid = print_prompt(buff[*nb_try], fd);
         while (valid == false) {
-            printf("\033[A\033[2K\033[A\033[2K\t\t     \033[1;31mInvalid word: %s\033[0m", buff[*nb_try]);
+            printf("\033[A\033[2K\033[A\033[2K\t\t     \033[1;31mInvalid word: %s\033[0;8;30m%s\033[0m", buff[*nb_try], word);
             valid = print_prompt(buff[*nb_try], fd);
         }
         ret = check_word_status(word, buff[*nb_try], result[*nb_try]);
@@ -115,4 +115,3 @@ int shell_game_loop(char *word, int fd, unsigned int *nb_try) {
     return ret;
 }
 #endif
-
