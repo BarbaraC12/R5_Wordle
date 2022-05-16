@@ -25,7 +25,6 @@ static void print_lose() {
 /* =========================================================================*/
 
 int main (int ac, char **av) {
-    assert(WORD_SIZE == 6);
     (void)ac,(void)av;
     int fd = open(FILEPATH, O_RDONLY);
     if (!fd) return 1;
